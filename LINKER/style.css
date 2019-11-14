@@ -133,4 +133,5 @@
 
 img { width: 30%;  text-align: center;}
 .pic{ width: 100%;}
-.farve{ color: #ffaa4a;}
+span{ display: block;}
+span:after {content: ' '; position: absolute; left: 0; width: 100%; height: 100%; z-index: 1; transform-origin: 100% 0; background: white;}

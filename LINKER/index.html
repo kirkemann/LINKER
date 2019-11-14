@@ -53,21 +53,21 @@
                 </form>
             </div>
         </nav>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
-                <section class=" col-6 sec1home container-fluid">
-                        <article class="text-center">
-                            <h2 class="farve">Brug din faglige identitet til, at udforske alle de virksomheder der mangler elever</h2>
-                            <h4 class="">Vores mål er, at have en platform hvor elever og virksomheder kan komme i kontakt med hinanden. Vi arbejder sammen med skoler og virksomheder overalt i landet, og derfor er der rig mulighed for, at finde netop det du mangler.</h4>
+                <section class=" col-lg-6 col-12 sec1home container-fluid">
+                        <article class="alltxt text-center">
+                            <h1 class="farve"><span>Brug din faglige identitet til, at</span><span>udforske alle de virksomheder</span> <span>der mangler elever</span></h1>
+                            <h4 class="farve mt-5">Vores mål er, at have en platform hvor elever og virksomheder kan komme i kontakt med hinanden. Vi arbejder sammen med skoler og virksomheder overalt i landet, og derfor er der rig mulighed for, at finde netop det du mangler.</h4>
                         </article>
                     </section>
-            <section class="col-6">
+            <aside class="col-lg-6 col-12">
                 <img class="img-fluid pic" src="./assets/images/agreement-3546008_1280.jpg" alt="">
-            </section>
+            </aside>
         </div>
         </div>
         <footer>
-            <div class="container">
+            <div class="container mt-5">
                 <div class="row text-center">
                     <div class="col-12 col-md-8 col-lg-6">
                         <p>Linker Aps</p>
@@ -81,5 +81,25 @@
                 </div>
             </div>
         </footer>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+
+
+    <script>
+
+        var rule = CSSRulePlugin.getRule("span:after")
+
+        // gsap.from('.farve', {opacity: 0, duration: 1, y: -50, stagger: 0.6});
+        // gsap.from('aside', {duration: 1, dalay: 1.1, backgroundPosition: '200px 0px', opacity:0});
+        // gsap.to(rule, {cssRule: {scaleY: 0}, duration: 1});
+
+
+        var tl = gsap.timeline({defaults:{duration: 1}})
+
+        tl.from(".farve", {y: -50, stagger: .6, opacity: 0})
+        .to(rule, {duration: 1.8, cssRule: {scaleY: 0}}, "-=2.2")
+        .from(".pic", {backgroundPosition: '600px 0px', opacity:0}, "+=.2")
+    </script>
 </body> 
 </html>

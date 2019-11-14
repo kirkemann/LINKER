@@ -59,3 +59,4 @@ tl.staggerFrom(chars, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOr
 document.getElementById("animate").onclick = function() {
   tl.restart();
 }
+
