@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LINKER</title>
+    <script src="./assets/js/custom.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="container-fluid bg-light">
+        <div class="row">
+            <section class="logosec col-12 col-md-4 col-lg-2">
+                <img class="img-fluid" src="./assets/images/Fuldt Logo.png" alt="">
+            </section>
+            <div class="container-fluid mt-5 col-12 col-md-8 col-lg-10">
+                    <h1 class="text-center">LINKER</h1>
+                    <h2 class="text-center">MØDESTEDET MELLEM VIRKSOMHEDER OG STUDERENDE</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Forside<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Elever.html">For Virksomheder<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="./Virksomhed.html">For Elever<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="./Virksomhed.html">Hvordan virker det<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="./signup.html">Ansøg om optagelse<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+    <section class="container">
+        
+        <div class="row">
+            <div class="container">
+                    <h2>Søg lige den elev du mangler her</h2>
+
+                    <div id="myBtnContainer">
+                      <button class="btn active" onclick="filterSelection('all')"> Vis alle</button>
+                      <button class="btn" onclick="filterSelection('Frontend')"> Frontend</button>
+                      <button class="btn" onclick="filterSelection('Backend')"> Backend</button>
+                      <button class="btn" onclick="filterSelection('Animate')"> Animate</button>
+                      <button class="btn" onclick="filterSelection('3D')"> 3D Studie</button>
+                    </div>
+                    
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 my-4 filterDiv Frontend">
+                        <div class="card">
+                            <img src="./assets/images/business-man-1385050_640.jpg" alt="" class="card-img-top img-fluid mb-4">
+                            <h4 class="card-title text-left px-2">Jesper Elgaard Johannsen</h4>
+                            <p class="card-text text-left px-2">Alder: 23 år</p>
+                            <p class="card-text text-left px-2">Bopæl: Broager</p>
+                            <p class="card-text text-left px-2">Webudvikler</p>
+                            <p class="card-text text-left px-2">VidenDjurs 3D College</p>
+                            <div class="btn btn-warning bold">Læs mere</div>
+                        </div>
+                    </div>   
+                    <div class="col-4 my-4 filterDiv Animate">
+                        <div class="card">
+                            <img src="./assets/images/girl-919048_640.jpg" alt="" class="card-img-top img-fluid mb-4">
+                            <h4 class="card-title text-left px-2">Helle Hellesen</h4>
+                            <p class="card-text text-left px-2">Alder: 35 år</p>
+                            <p class="card-text text-left px-2">Bopæl: Odense</p>
+                            <p class="card-text text-left px-2">3D Studie</p>
+                            <p class="card-text text-left px-2">VidenDjurs 3D College</p>
+                            <div class="btn btn-warning">Læs mere</div>
+                        </div>
+                    </div>  
+                    <div class="col-4 my-4 filterDiv 3D">
+                        <div class="card">
+                            <img src="./assets/images/pic1.png" alt="" class="card-img-top img-fluid mb-4">
+                            <h4 class="card-title text-left px-2">Frank Kirkemann</h4>
+                            <p class="card-text text-left px-2">Alder: 23 år</p>
+                            <p class="card-text text-left px-2">Bopæl: Broager</p>
+                            <p class="card-text text-left px-2">Webudvikler</p>
+                            <p class="card-text text-left px-2">VidenDjurs 3D College</p>
+                            <div class="btn btn-warning">Læs mere</div>
+                        </div>
+                    </div>  
+                    <div class="col-4 my my-4 filterDiv Backend">
+                        <div class="card">
+                            <img src="./assets/images/man-1209494_640.jpg" alt="" class="card-img-top img-fluid mb-4">
+                            <h4 class="card-title px-2">Jesper Elgaard Johannsen</h4>
+                            <p class="card-text px-2">Alder: 23 år</p>
+                            <p class="card-text px-2">Bopæl: Broager</p>
+                            <p class="card-text px-2">Webudvikler</p>
+                            <p class="card-text px-2">VidenDjurs 3D College</p>
+                            <div class="btn btn-warning">Læs mere</div>
+                        </div>
+                    </div>   
+                    <div class="col-4 my my-4 filterDiv Animate">
+                        <div class="card">
+                            <img src="./assets/images/women-2748752_640.jpg" alt="" class="card-img-top img-fluid mb-4">
+                            <h4 class="card-title text-left px-2">Helle Hellesen</h4>
+                            <p class="card-text text-left px-2">Alder: 35 år</p>
+                            <p class="card-text text-left px-2">Bopæl: Odense</p>
+                            <p class="card-text text-left px-2">3D Studie</p>
+                            <p class="card-text text-left px-2">VidenDjurs 3D College</p>
+                            <div class="btn btn-warning">Læs mere</div>
+                        </div>
+                    </div>  
+                    <div class="col-4 my my-4 filterDiv 3D">
+                        <div class="card">
+                            <img src="./assets/images/model-2911332_640.jpg" alt="" class="card-img-top img-fluid mb-4">
+                            <h4 class="card-title text-left px-2">Frank Kirkemann</h4>
+                            <p class="card-text text-left px-2">Alder: 23 år</p>
+                            <p class="card-text text-left px-2">Bopæl: Broager</p>
+                            <p class="card-text text-left px-2">Webudvikler</p>
+                            <p class="card-text text-left px-2">VidenDjurs 3D College</p>
+                            <div class="btn btn-warning">Læs mere</div>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+        </div>
+
+    </section>
+    <footer>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <p>Linker Aps</p>
+                        <p>Email: info@linker.dk</p>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <p>Hansenvej 215</p>
+                        <p>9999 Hansenby</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+    
+
+</body> 
+</html>
